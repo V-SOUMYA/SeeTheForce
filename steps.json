@@ -1,0 +1,21 @@
+{
+  "problem": "Rear-end collision: car stops suddenly",
+  "steps": [
+    {
+      "visual": "moving_car",
+      "text": "A car is moving forward with a certain velocity, so it has momentum."
+    },
+    {
+      "visual": "collision",
+      "text": "The car collides and experiences a large force for a very short time."
+    },
+    {
+      "visual": "stopping",
+      "text": "The car comes to rest, meaning its momentum is reduced to zero."
+    },
+    {
+      "visual": "impulse",
+      "text": "The impulse applied equals the change in momentum."
+    }
+  ]
+}
