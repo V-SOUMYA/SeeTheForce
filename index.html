@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>IMPULSE</title>
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1>IMPULSE</h1>
+        <p class="tagline">See Momentum. Understand Collisions.</p>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="container">
+
+        <!-- VISUALIZATION AREA -->
+        <section class="visualization">
+            <!-- SVG / Canvas goes here -->
+            <svg id="scene" width="500" height="300">
+                <!-- Objects, arrows, etc. will be drawn here via JS -->
+            </svg>
+        </section>
+
+        <!-- EXPLANATION PANEL -->
+        <section class="explanation">
+            <h2>Explanation</h2>
+            <p id="explanation-text">
+                Click "Next" to begin the collision explanation.
+            </p>
+        </section>
+
+    </main>
+
+    <!-- CONTROLS -->
+    <footer class="controls">
+        <button id="prev-btn">Previous</button>
+        <span id="step-indicator">Step 0 of 4</span>
+        <button id="next-btn">Next</button>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
