@@ -1,0 +1,5 @@
+{
+  "name": "SeeTheForce",
+  "description": "An AI-powered physics tutor that transforms equations into clear, educational animations. Visualize complex motion with dual-view space and graph representations.",
+  "requestFramePermissions": []
+}
