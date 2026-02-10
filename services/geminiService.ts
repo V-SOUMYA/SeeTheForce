@@ -4,11 +4,14 @@ import { PHYSICS_SYSTEM_PROMPT } from "../constants";
 import { PhysicsData } from "../types";
 
 export const fetchPhysicsSimulation = async (query: string): Promise<PhysicsData> => {
-  if (!process.env.API_KEY) {
-    throw new Error("API Key is missing. Please ensure process.env.API_KEY is configured.");
+  const apiKey = import.meta.env.VITE_GEMINI_API_KEY;
+
+  if (!apiKey) {
+    throw new Error("API Key is missing. Please ensure VITE_GEMINI_API_KEY is configured.");
   }
 
-  const ai = new GoogleGenAI({ apiKey: process.env.API_KEY });
+  const ai = new GoogleGenAI({ apiKey });
+
   
   try {
     const response = await ai.models.generateContent({
